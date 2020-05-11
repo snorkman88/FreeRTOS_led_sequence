@@ -1,0 +1,19 @@
+19:25:37 **** Build of configuration Release for project freertos_blinky ****
+make -r all 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/snorkman/LPCXpresso/solofreertos/lpc_chip_43xx/Release" -L"/home/snorkman/LPCXpresso/solofreertos/lpc_board_nxp_lpcxpresso_4337/Release" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "freertos_blinky_Release.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/croutine.o ./freertos/src/event_groups.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/redlib_memfix.o ./freertos/src/tasks.o ./freertos/src/timers.o  ./example/src/blinky.o ./example/src/cr_startup_lpc43xx.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_4337 -llpc_chip_43xx
+Finished building target: freertos_blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf";  arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; checksum -p LPC4337 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7612	     12	    688	   8312	   2078	freertos_blinky.axf
+copy from `freertos_blinky.axf' [elf32-littlearm] to `freertos_blinky.bin' [binary]
+Written checksum 0x53ff69be at offset 0x1c in file freertos_blinky.bin
+Previous value 0x00000000 at offset 0x1c in file freertos_blinky.bin
+ 
+
+19:25:38 Build Finished (took 864ms)
+

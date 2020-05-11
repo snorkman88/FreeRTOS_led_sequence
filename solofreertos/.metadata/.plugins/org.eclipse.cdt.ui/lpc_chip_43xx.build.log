@@ -1,0 +1,6 @@
+19:25:35 **** Build of configuration Release for project lpc_chip_43xx ****
+make -r all 
+make: No se hace nada para 'all'.
+
+19:25:35 Build Finished (took 664ms)
+

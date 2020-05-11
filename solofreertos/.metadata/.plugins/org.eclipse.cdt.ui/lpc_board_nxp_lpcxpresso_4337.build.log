@@ -1,0 +1,6 @@
+19:25:32 **** Build of configuration Release for project lpc_board_nxp_lpcxpresso_4337 ****
+make -r all 
+make: No se hace nada para 'all'.
+
+19:25:33 Build Finished (took 539ms)
+
